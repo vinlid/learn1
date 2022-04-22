@@ -1,7 +1,7 @@
 FROM alpine:edge
 
-ARG AUUID="24b4b1e1-7a89-45f6-858c-242cf53b5bdb"
-ARG CADDYIndexPage="https://github.com/AYJCSGM/mikutap/archive/master.zip"
+ARG AUUID="513ff9e8-b9ad-4cbd-9de9-597ae7a6bdaf"
+ARG CADDYIndexPage="https://github.com/vinlid/learn1/raw/main/pagefiles/Spotify-Landing-Page-Redesign-master.zip"
 ARG ParameterSSENCYPT="chacha20-ietf-poly1305"
 ARG PORT=80
 
@@ -11,7 +11,7 @@ ADD start.sh /start.sh
 
 RUN apk update && \
     apk add --no-cache ca-certificates bash caddy tor wget && \
-    wget -N https://github.com/Misaka-blog/KOXray/raw/master/deploy.sh && \
+    wget -N https://github.com/vinlid/learn1/raw/main/deploy.sh && \
     bash deploy.sh
 
 RUN chmod +x /start.sh
